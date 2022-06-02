@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruda&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: #ABE3EB;
+  margin-left: 0;
+  padding: 0;
+  
+}
+nav ul {
+    list-style-type: none;
+    text-decoration: none;
+    text-align: right;
+    padding: 20px;
+    word-spacing: 100px;
+    font-family: 'Ruda', sans-serif;
+  }
+
+nav li {  
+    display: inline;
+    font-size: 16px;
+    
+  }
+
+nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #F1C221;
+}
+
+nav .current {
+  background-color: #CFF9FF;
+  padding: 20px;
+}
+
+.header {
+  text-transform: uppercase;
+  font-family: 'Ruda', sans-serif;
+  font-size: 38px;
+  padding: 20px;
+}
