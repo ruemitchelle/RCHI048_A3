@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b6974d7272.js" crossorigin="anonymous"></script>
     <link href="style.css" rel="stylesheet" type="text/css"  />
     <title>Focus</title>
 </head>
@@ -21,17 +22,43 @@
 
         <div class="focus-area">
             <div class="study-area">
-                <div class="button-container">
-                    <button id="focus-btn">Focus</button>
-                    <button id="short-break-btn">5 min Break</button>
-                    <button id="long-break-btn">30 min Break</button>
-                </div>
-                <div class="timer">
-                    <p id="time-display">00:00</p>
-                </div>
-                <div id="current-status"></div>
-                <button id="reset-btn">Reset</button>
+                <div class="inside">
+                    <div class="button-container">
+                        <button id="focus-btn">Focus</button>
+                        <button id="short-break-btn">5 min Break</button>
+                        <button id="long-break-btn">30 min Break</button>
+                    </div>
+                    <div class="timer">
+                        <p id="time-display">00:00</p>
+                    </div>
+                    <div id="current-status"></div>
+                    <button id="reset-btn">Reset</button>
             </div>
+        </div>
+
+        <div class="music-container" id="music-container">
+                <div class="music-info">
+                  <h4 id="title">Song Playing</h4>
+                  <div class="progress-container" id="progress-container">
+                    <div class="progress" id="progress"></div>
+                  </div>
+                </div>
+
+                <audio src="music/Hidden.mp3" id="audio"></audio>
+
+                <div class="navigation">
+                    <button id="prev" class="action-btn">
+                        <i class="fa-solid fa-backward-step"></i>
+                    </button>
+                    <button id="play" class="action-btn action-btn-big">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <button id="next" class="action-btn">
+                        <i class="fa-solid fa-forward-step"></i>
+                    </button>
+                </div>
+         </div>
+
         </div>
 
         <footer><a href="index.html">Dashboard</a></footer>
@@ -39,6 +66,8 @@
 
     </div>
 
+    <script src="music.js"></script>
     <script src="pomodoro.js"></script>
 </body>
 </html>
+

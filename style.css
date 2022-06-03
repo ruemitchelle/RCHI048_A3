@@ -144,7 +144,7 @@ select {
 }
 
 
-/*css for focus page*/
+/*css for pomodoro */
 
 .container-focus {
   background-color: #E7FCFF;
@@ -159,34 +159,41 @@ select {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* background-color: green; */
   height: 80%;
 }
 
 .study-area {
-  background-color: white;
-  border: solid;
+  background-color: #ABE3EB;
+  border: solid 1px #ABE3EB;
+  border-radius: 15px;
+  box-shadow: 0 20px 20px 0 rgba(95, 146, 195, 0.5);
   padding: 1.5rem;
   align-items: center;
   height: 50%;
-  width: 50%;
+  width: 40%;
+  max-width: 40%;
 }
 
-.button-container {
-  display: flex;
+.inside {
+  background-color: transparent;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
 }
 
 button {
   font-family: 'Roboto', sans-serif;
   padding: 1rem;
-  border: 1px solid #FB934A;
-  background-color: #FFF;
+  border: 2px solid #ABE3EB;
+  background-color: #5DBCCA;
+  border-radius: 8px;
 }
 .timer {
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
+  font-size: 3rem;
 }
+
 
 /* .timer-display {
   font-family: Arial, Helvetica, sans-serif;
@@ -198,4 +205,80 @@ footer {
   bottom: 0;
   width: 100%;
 
+}
+
+/*styling for music play*/
+
+/* background-image: linear-gradient(0deg, #ABE3EB 23%,  #1EBDD3  92% ); */
+
+.music-container {
+  background-color: #5DBCCA;
+  border-radius: 15px;
+  box-shadow: 0 20px 20px 0 rgba(95, 146, 195, 0.5);
+  display: flex;
+  padding: 20px 30px;
+  position: relative;
+  margin: 100px 0;
+  z-index: 10;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.action-btn {
+  background-color: transparent;
+  border: 0;
+  color: #2C2D2D;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 20px;
+}
+
+.action-btn-big {
+  color: #000;
+  font-size: 30px;
+}
+
+.music-info {
+  background-color: #BADCE1;
+  border-radius: 15px 15px 0 0;
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  width: calc(100% - 40px);
+  opacity: 0;
+  transform: translateY(0%);
+  padding: 10px 10px 10px 100px;
+  transition: transform 0.3s ease-in opacity 0.3s ease-in;
+}
+
+.music-container.play .music-info {
+  opacity: 1;
+  transform: translateY(-100%);
+}
+
+.music-info h4 {
+  margin: 0;
+}
+
+.progress-container {
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+  height: 4px;
+  width: 100%;
+}
+
+.progress {
+  background-color: #000;
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
 }
