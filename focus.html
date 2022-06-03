@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css"  />
+    <title>Focus</title>
+</head>
+<body>
+    <div class="container-focus">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Dashboard</a></li>
+                    <li><a class="current" href="focus.html">Focus</a></li>
+                    <li><a href="calendar.html">Calendar</a></li>
+                </ul>
+            </nav>
+        
+        <h1>Focus Time</h1>
+
+        <div class="focus-area">
+            <div class="study-area">
+                <div class="button-container">
+                    <button id="focus-btn">Focus</button>
+                    <button id="short-break-btn">5 min Break</button>
+                    <button id="long-break-btn">30 min Break</button>
+                </div>
+                <div class="timer">
+                    <p id="time-display">00:00</p>
+                </div>
+                <div id="current-status"></div>
+                <button id="reset-btn">Reset</button>
+            </div>
+        </div>
+
+        <footer><a href="index.html">Dashboard</a></footer>
+
+
+    </div>
+
+    <script src="pomodoro.js"></script>
+</body>
+</html>

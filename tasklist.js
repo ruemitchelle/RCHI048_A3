@@ -1,6 +1,7 @@
 const todoInput = document.querySelector('.todo-input');
 const todoButton = document.querySelector('.todo-button');
 const todoList = document.querySelector('.todo-list');
+const todoDate = document.querySelector('todo-duedate');
 
 todoButton.addEventListener('click', addTodo);
 
@@ -15,6 +16,11 @@ function addTodo(event){
     newTodo.innerText = todoInput.value;
     newTodo.classList.add('todo-item');
     todoDiv.appendChild(newTodo);
+    // Create dude date 
+    const dueDate = document.createElement('li');
+    const todoDate = todoDate.value;
+    newTodo.innerHTML = todoInput.value;
+    todoDiv.appendChild(dueDate);
     //Create completed button
     const completedButton = document.createElement('button');
     completedButton.innerHTML = '<i class="fa-regular fa-circle-check"></i>';
