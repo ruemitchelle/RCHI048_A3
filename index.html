@@ -16,31 +16,37 @@
             <ul>
                 <li><a class="current" href="index.html">Dashboard</a></li>
                 <li><a href="focus.html">Focus</a></li>
-                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="assignments.html">Assignments</a></li>
             </ul>
         </nav>
     <header>
         <h1>Welcome Back Lisa</h1>
     </header>
 
-        <h2 class="todo-title">Upcoming Projects</h2>
-        <div class="todo-container">
-            <ul class="todo-list">
-            </ul>
-        </div>
-        <form>
-            <input type="text" class="todo-input" placeholder="Enter Task">
-            <input type="date" class ="todo-input" placeholder="Enter Due Date">
-            <select name="priorities" id="prio">
-                    <option value="low">Low</option>
-                    <option value="mid">Mid</option>
-                    <option value="high">High</option>
-            </select>
-            <button class="todo-button" type="submit">
-                <i class="fa-solid fa-plus"></i>
-            </button>
-        </form>
-
+                <h2 class="task-title">Whats up for Today?</h2>
+                <div class="task-container">
+                    <ul class="task-list">
+                    </ul>
+                </div>
+                <form>
+                    <input type="text" class="task-input">
+                    <button class="task-button" type="submit">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </form>
+                
+                <div class="timer-task">
+                    <h2 class="quick-timer">Begin</h2>
+                    <div class="timer-area">
+                        <span id="mainminute">00</span>
+                        <span id="mainsecond">00</span>
+                        <span id="milliseconds">00</span>
+                    </div>
+                    <button id="start" onclick="start();">Start</button>
+                    <button id="stop" onclick="stop();">Stop</button>
+                    <button id="reset" onclick="reset();">Reset</button>
+                </div>
+     
 
     </div>
         
