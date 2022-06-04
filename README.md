@@ -36,7 +36,9 @@ Duckett, J. (2022). Front-End Back-End Development with HTML, CSS, JavaScript, j
 Mozilla. (n.d.). Window.localStorage - Web APIs | MDN. Retrieved May 29, 2022, from https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
 Mozilla. (2022, May 21). Date - JavaScript | MDN. Retrieved May 27, 2022, from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
 Onome, D. (2021, August 25). Building a Music Player with Vanilla JavaScript. Section. Retrieved May 27, 2022, from https://www.section.io/engineering-education/how-to-build-a-music-player-with-vanilla-javascript/
+Perez, N. (2021, April 12). Create a Flashcard Project using HTML, CSS & Javascript. Morioh. Retrieved June 3, 2022, from https://morioh.com/p/54ed6aa71e88
 W3 Schools. (n.d.). JavaScript Tutorial. Javascript. Retrieved May 30, 2022, from https://www.w3schools.com/js/default.asp
+
 
 all images sourced from Blush.design https://blush.design/
 all audio sourced from PixaBay https://pixabay.com/
