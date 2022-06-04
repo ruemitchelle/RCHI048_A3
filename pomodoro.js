@@ -21,10 +21,13 @@ setInterval(function (){
     }
 }, 1000);
 
+// create the timers for the buttons 
+
 focusBtn.addEventListener('click', function () {
     secondsRemaining = 60 * 30;
 });
 
+//add the message the user sees once they click the break buttons
 
 shortBtn.addEventListener('click', function () {
     secondsRemaining = 60 * 5;
@@ -36,6 +39,8 @@ longBtn.addEventListener('click', function () {
     currentStatus.textContent = "Enjoy 15 Minute Break!";
 });
 
+
+//make sure the reset button sets the timer back to zero 
 
 resetBtn.addEventListener('click', function() {
     secondsRemaining = 0;

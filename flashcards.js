@@ -1,5 +1,7 @@
 var contentArray = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : [];
 
+//create event listeners
+
 document.getElementById("save_card").addEventListener("click", () => {
   addFlashcard();
 });
@@ -17,6 +19,8 @@ document.getElementById("show_card_box").addEventListener("click", () => {
 document.getElementById("close_card_box").addEventListener("click", () => {
   document.getElementById("create_card").style.display = "none";
 });
+
+// create the cards the appear when the user puts their word and definition 
 
 flashcardMaker = (text, delThisIndex) => {
   const flashcard = document.createElement("div");

@@ -8,6 +8,8 @@ window.onload = function(){
     var buttonReset = document.getElementById("btn-reset");
     var Interval;
 
+    //event listeners 
+
     buttonStart.addEventListener('click', () => {
         clearInterval(Interval);
         Interval = setInterval(startTimer, 10);
@@ -24,6 +26,8 @@ window.onload = function(){
         OutputSeconds.innerHTML = seconds;
         OutputTens.innerHTML = tens;
     });
+
+    //creates counting of the stopwatch 
 
     function startTimer(){
         tens++;

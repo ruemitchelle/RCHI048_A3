@@ -28,6 +28,8 @@ function taskMain(){
     selectElem.addEventListener('change', filterEntries, false);
   }
 
+  //create empty entries to be able to take the users inputs and store them 
+
   function addEntry(event){
 
     let inputValue = inputElem.value;
@@ -41,6 +43,8 @@ function taskMain(){
 
     let timeValue = timeInput.value;
     timeInput.value = "";
+
+    //the entries that are going to be placed in the tasklist 
 
     let obj = {
         task : inputValue,
@@ -59,9 +63,13 @@ function taskMain(){
 
   }
 
+  // create ability to specify which type of priority to show
+
   function filterEntries() {
 
     let selection = selectElem.value;
+
+    // shows all the different priorities 
 
     if(selection == "all"){
         let rows = document.getElementsByTagName('tr');
@@ -72,6 +80,7 @@ function taskMain(){
         
       });
 
+//this will allow the user to sperate the different priority levels 
 
     }else{
 
@@ -95,6 +104,8 @@ function taskMain(){
 
   }
 
+  //save the enteries into the local storage 
+
   function save() {
     let stringified = JSON.stringify(taskList);
     localStorage.setItem('taskList', stringified);
@@ -112,6 +123,8 @@ function taskMain(){
             renderRow(task, null);
         })
     }
+
+    //create the inputs that need to be render each time 
 
     function renderRow({task: inputValue, category: inputValue2, date, time, done}) {
 
