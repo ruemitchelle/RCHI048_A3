@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <div class="container-dashboard">
+    <div class="index-container">
         <nav>
             <ul>
                 <li><a class="current" href="index.html">Dashboard</a></li>
@@ -19,47 +19,45 @@
                 <li><a href="assignments.html">Assignments</a></li>
             </ul>
         </nav>
-    <header>
-        <h1>Welcome Back Lisa</h1>
-    </header>
-
-                <h2 class="task-title">Whats up for Today?</h2>
-                <div class="task-container">
-                    <ul class="task-list">
-                    </ul>
-                </div>
-                <form>
-                    <input type="text" class="task-input">
-                    <button class="task-button" type="submit">
-                        <i class="fa-solid fa-plus"></i>
-                    </button>
-                </form>
-                
-                <div class="timer-task">
-                    <h2 class="quick-timer">Begin</h2>
-                    <div class="timer-area">
-                        <span id="mainminute">00</span>
-                        <span id="mainsecond">00</span>
-                        <span id="milliseconds">00</span>
-                    </div>
-                    <button id="start" onclick="start();">Start</button>
-                    <button id="stop" onclick="stop();">Stop</button>
-                    <button id="reset" onclick="reset();">Reset</button>
-                </div>
-     
+        <div class="content-index">
+        <h1>Welcome Back!</h1>
+        <p>What do you have planned for today?</p>
+        <ul></ul>
+        <div class="table-area">
+                <table id="taskTable">
+                    <tr>
+                        <td>Completed</td>
+                        <td>Date</td>
+                        <td>Time</td>
+                        <td>Task</td>
+                        <td>
+                        <select id="priorityFilter">
+                            <option value="all">View All</option>
+                            <option value="High">High</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Low">Low</option>
+                        </select></td>
+                        <td></td>
+                    </tr>
+                </table>
+        </div>
+        <div class="manager-area">
+            <h4>New Task?</h4>
+            <p><input type="text" placeholder="Task"></p>
+            <p><input type="text" placeholder="Priority" list="priority"></p>
+            <datalist id="priority">
+                <option value="High"></option>
+                <option value="Medium"></option>
+                <option value="Low"></option>
+            </datalist>
+            <p><input type="date" id="dueDate"></p>
+            <p><input type="time" id="dueTime"></p>
+            <button id="addBtn">Add</button>
+        </div>
+        
+    </div>
 
     </div>
-        
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     <script src="tasklist.js"></script>
 </body>

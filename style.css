@@ -255,96 +255,91 @@ button {
 
 /*  */
 
-form, .task-title{
-  min-height: 20vh;
+/*dashboard page css*/
+
+.index-container {
+  background-color: #E7FCFF;
+  height: 100%;
+  height: 100vh;
+  width: 100%;
+  background-image: url('dashboard.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top right;
+}
+
+.content-index {
+  margin-left: 20px;;
+}
+
+.content-index h1 {
+  padding: 10px;
+  text-decoration: underline;
+  margin-top: 1%;
+}
+.content-index p {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.manager-area {
+  background-color: #ABE3EB;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px 0 rgba(95, 146, 195, 0.5);
+  margin-top: 5%;
+  padding: 20px;
+  width: 100%;
+  height: 10%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border: #000;
-  border-radius: 0;
-}
-
-.task-title { 
-  font-family: 'Ruda', sans-serif;
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-
-form input, form button {
-  padding: 0.5rem;
-  font-size: 2rem;
-  background: white;
-}
-
-form button {
-  color: #000;
-  background: white;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-form button:hover {
-  background: #000;
-  color: white;
-}
-
-.task-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.task-list {
-  min-width: 30%;
-  list-style: none;
-}
-
-.task {
-  margin: 0.4rem;
-  background: #F8D661;
-  display: flex;
-  font-size: 1rem;
   justify-content: space-between;
-  align-items: center;
+  overflow: hidden;
+  /* white-space: nowrap;  */
 
 }
 
-.task li{
-  flex: 1;
-  
-
-}
-
-.trash-btn, .completed-btn {
-  background: #D16D6A;
-  color: white;
-  border: none;
-  padding: 1rem;
-  cursor: pointer;
+.manager-area input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #5DBCCA;
   font-size: 1rem;
+  display: table-cell;
+  vertical-align: middle;
 }
 
-.completed-btn {
-  background: #9DC284;
+.manager-area h4 {
+  padding: 5px;
+  margin-right: 10px;
+  font-size: 10px;
+  text-decoration: underline;
+  margin-top: 1%;
 }
 
-.task-item{
-  padding: 0rem 0.5rem;
+
+.table-area {
+  padding: 10px;
+  margin-left: 30%;
 }
 
-.fa-trash-can, .fa-circle-check {
-  pointer-events: none;
+.strike {
+  text-decoration: line-through;
 }
 
-/**/
-
-
-.timer-area {
-  background-color: red;
+td {
+  border: 1px solid #5DBCCA;
+  padding: 5px;
 }
 
-.timer-task {
-  background-color: pink;
-  justify-content: center;
-  align-content: center;
+table {
+  border: 3px solid #5DBCCA;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px 0 rgba(95, 146, 195, 0.5);
+
 }
+
+#addBtn {
+  padding: 10px 50px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+
