@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="flashcard.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Flashcards</title>
+</head>
+<body>
+  
+  <div class="container-flashcards">
+    <nav>
+        <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="focus.html">Focus</a></li>
+            <li><a class="current" href="flashcards.html">Memorize</a></li>
+        </ul>
+    </nav>
+    <h1>Memorize</h1>
+    <p>Create your own Acronyms to help with memorization! Start the stopwatch to see how long it takes you to get through all your cards. The more you memorize, the faster you will become.</p>
+          <div class="newCards">
+            <button id="show_card_box">Add Card</button>
+            <button id="delete_cards">Del Cards</button>
+          </div>
+
+        <div class="stopwatch">
+          <div class="stopwatch-title"> 
+            <h3>Stop Watch</h3>
+          </div>
+          <div class="stopwatch-timer">
+          <p id="time"><span id="second">00</span>:<span id="tens">00</span></p>
+          </div>
+    
+          <div class="stopwatch-buttons">
+            <button id="btn-start">Start</button>
+            <button id="btn-stop">Stop</button>
+            <button id="btn-reset">Reset</button>
+          </div>
+        </div>
+    
+    <section>
+      <div class="container">
+        <div id="create_card">
+          <h2>Create Acronym</h2>
+          <label for="acronym">Acronym</label>
+          <textarea id="acronym" maxlength="280"></textarea>
+          <label for="answer" maxlength="280">Answer</label>
+          <br>
+          <textarea id="answer"></textarea>
+          <div>
+            <button id="save_card">Save</button> 
+            <button id="close_card_box">Close</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div id="flashcards"></div>
+      </div>
+    </section>
+
+  </div>
+  
+  <script src="stopwatch.js"></script>
+  <script src="flashcards.js"></script>
+</body>
+</html>

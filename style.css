@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Ruda&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@600&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -14,6 +15,21 @@ body {
   font-family: 'Ruda', sans-serif;
   bottom: 0;
 }
+
+p {
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+
+}
+
+h1 {
+  font-family: 'Palanquin', sans-serif;
+  font-size: 2.5rem;
+  margin-left: 20px;
+  padding: 20px;
+  text-decoration: underline;
+}
+
 nav {
   background-color: #ABE3EB;
   margin-left: 0;
@@ -63,6 +79,14 @@ nav .current {
   position: absolute;
   align-items: center;
   justify-content: center;
+  background-image: url('clouds.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom left;
+}
+
+.container-focus p {
+  margin-left: 45px;
 }
 
 .focus-area {
@@ -76,6 +100,8 @@ nav .current {
 
 }
 
+
+
 .study-area {
   background-color: #ABE3EB;
   border: solid 1px #ABE3EB;
@@ -86,11 +112,15 @@ nav .current {
 }
 
 button {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Varela Round', sans-serif;
+  font-weight: 900;
   padding: 1rem;
-  border: 2px solid #ABE3EB;
-  background-color: #5DBCCA;
+  border: 2px solid #3B98A6;
+  background-color: #3B98A6;
+  color: #fff;
   border-radius: 8px;
+  cursor: pointer;
+ 
 }
 .timer {
   font-family: Arial, Helvetica, sans-serif;
@@ -177,85 +207,9 @@ button {
   transition: width 0.1s linear;
 }
 
-/*css for assignments page*/
-
-.container-assignments {
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: #BADCE1;
-
-}
-
-.todo-container {
-  width: 1000px;
-  height: 80vh;
-  left: 50%;
-  display: flex;
-  border: 1px solid #000;
-  border-radius: 10px;
-  box-shadow: 0 10px 10px 0 rgba(0, 137, 71, 0.5);
-}
-
-.status {
-  width: 25%;
-  background-color: #6EB6C0;
-  border-radius: 10px;
-  position: relative;
-  padding: 60px 1rem 0.5rem;
-}
-
-.status h1{
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: transparent;
-  border: 0px solid #446033;
-  color: #000;
-  margin: 0;
-  width: 100%;
-  padding: 0.5rem 1rem;
-}
 
 
-.status:nth-child(even) {
-  background-color: #82BC92;
-}
-
-#add_btn {
-  background-color: purple;
-  box-shadow: 0 10px 10px 0 rgba(0, 137, 71, 0.5);
-  border: none;
-  width: 100%;
-  cursor: pointer;
-}
-
-.todo {
-  position: relative;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #BADCE1;
-  box-shadow: 0 10px 10px 0 rgba(0, 137, 71, 0.5);
-  border-radius: 5px;
-  padding: 0.5rem 1rem;
-  font-size: 1.5rem;
-  margin: 0.5rem 0;
-}
-
-.todo .close {
-  position: absolute;
-  right: 1rem;
-  top: 0.5rem;
-  font-size: 2rem;
-}
-
-.todo .close:hover {
-  cursor: pointer;
-}
-
-/*  */
-
-/*dashboard page css*/
+/*Dashboard page css*/
 
 .index-container {
   background-color: #E7FCFF;
@@ -272,11 +226,6 @@ button {
   margin-left: 20px;;
 }
 
-.content-index h1 {
-  padding: 10px;
-  text-decoration: underline;
-  margin-top: 1%;
-}
 .content-index p {
   margin-top: 20px;
   padding-left: 20px;
@@ -286,7 +235,7 @@ button {
   background-color: #ABE3EB;
   border-radius: 10px;
   box-shadow: 0 10px 10px 0 rgba(95, 146, 195, 0.5);
-  margin-top: 5%;
+  margin-top: 25%;
   padding: 20px;
   width: 100%;
   height: 10%;
@@ -317,7 +266,6 @@ button {
 
 .table-area {
   padding: 10px;
-  margin-left: 30%;
 }
 
 .strike {
@@ -333,7 +281,6 @@ table {
   border: 3px solid #5DBCCA;
   border-radius: 5px;
   box-shadow: 0 10px 10px 0 rgba(95, 146, 195, 0.5);
-
 }
 
 #addBtn {
@@ -342,4 +289,138 @@ table {
   font-weight: 900;
 }
 
+/*flashcards css*/
 
+.container-flashcards {
+  background-color: #E7FCFF;
+  width: 100%;
+  height: 100vh;
+  background-image: url('flashcards.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom right;
+}
+
+.container-flashcards p {
+  padding: 10px;
+  text-align: center;
+}
+
+
+
+#create_card{
+  display: none;
+  width: 370px;
+  margin:auto;
+  padding: 20px;
+  margin-top: 10px;
+  background: #ABE3EB;
+  border: 3px solid #5DBCCA;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px 0 rgba(95, 146, 195, 0.5);
+}
+
+#create_card h2{
+  color: black;
+  text-align: center;
+}
+
+.newCards {
+  padding: 20px;
+  margin-left: 45%;
+}
+
+#create_card textarea{
+  width: 100%;
+  border-radius: 5px;
+  font-family: inherit;
+  border: 1px solid lightgray;
+  resize: none;
+}
+
+#create_card button{width: fit-content;}
+
+#flashcards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+  padding: 0px 10px;
+}
+
+.flashcard{
+  width: 370px;
+  height: 200px;
+  word-wrap: break-word;
+  margin: 10px; 
+  background: #ABE3EB;
+  cursor: pointer;
+  position: relative;
+}
+
+.flashcard h2{font-size: 1rem;}
+
+.fa-minus{
+  top: 3%;
+  right: 2%;
+  position: absolute;
+  color: #1a1a1a;
+  transition: 0.3s ease-out;
+}
+
+.fa-minus:hover{color: #5DBCCA;}
+
+.stopwatch {
+  background: #ABE3EB;
+  border: 3px solid #5DBCCA;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px 0 rgba(95, 146, 195, 0.5);
+  display: flex;
+  justify-content: space-between ;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  height: 170px;
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+
+.stopwatch #time {
+  font-size: 1.5rem;
+
+}
+.stopwatch h3 {
+  text-align: center;
+  padding: 10px;
+}
+
+@media(max-width:1280px){
+  .container{width: 100%;}
+}
+
+@media(max-width:768px){
+  .flashcard{margin: auto;}
+
+  .flashcard{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media(max-width:480px){
+  #header{
+    padding: 20px;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #create_card{width: 95%;}
+
+  .flashcard{width: 100%;}
+
+}
