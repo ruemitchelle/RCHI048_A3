@@ -232,27 +232,23 @@ button {
 }
 
 .manager-area {
-  background-color: #ABE3EB;
   border-radius: 10px;
-  box-shadow: 0 10px 10px 0 rgba(95, 146, 195, 0.5);
   margin-top: 25%;
   padding: 20px;
-  width: 100%;
+  width: 50%;
   height: 10%;
-  display: flex;
+  display: inline;
   justify-content: space-between;
   overflow: hidden;
-  /* white-space: nowrap;  */
 
 }
 
 .manager-area input {
   padding: 10px;
   border-radius: 10px;
+  width: 100%;
   border: 2px solid #5DBCCA;
   font-size: 1rem;
-  display: table-cell;
-  vertical-align: middle;
 }
 
 .manager-area h4 {
@@ -280,13 +276,15 @@ td {
 table {
   border: 3px solid #5DBCCA;
   border-radius: 5px;
+  width: 10%;
   box-shadow: 0 10px 10px 0 rgba(95, 146, 195, 0.5);
 }
 
 #addBtn {
-  padding: 10px 50px;
+  padding: 10px 30px;
   font-size: 20px;
   font-weight: 900;
+
 }
 
 /*flashcards css*/
@@ -382,7 +380,7 @@ table {
   justify-content: space-between ;
   flex-direction: column;
   align-items: center;
-  width: 30%;
+  width: 100%;
   height: 170px;
   margin: auto;
   padding-bottom: 10px;
@@ -400,10 +398,14 @@ table {
 
 @media(max-width:1280px){
   .container{width: 100%;}
+  .container-flashcards {width: 100%;};
+  .container-focus{width: 100%;};
+  .content-index{width: 100%;};
 }
 
 @media(max-width:768px){
   .flashcard{margin: auto;}
+  .manager-area{margin:auto;}
 
   .flashcard{
     margin-top: 10px;
@@ -419,8 +421,10 @@ table {
     align-items: center;
   }
 
-  #create_card{width: 95%;}
+  #create_card{width: 95%;};
 
-  .flashcard{width: 100%;}
+  .flashcard{width: 100%;};
+  .stopwatch{width: 100%;};
+  .manager-area{width: 100%}
 
 }
